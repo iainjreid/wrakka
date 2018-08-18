@@ -6,10 +6,10 @@ import akka.util.Timeout
 
 import scala.concurrent.ExecutionContext
 
-trait WrakkaContext[M[_]] {
+trait WrakkaContext {
   implicit def system: ActorSystem
   implicit val timeout: Timeout
   implicit val executionContext: ExecutionContext
 
-  case class WrakkaResult[T](value: M[Either[StatusCode, T]])
+  case class WrakkaResult[T](value: Either[StatusCode, T])
 }
