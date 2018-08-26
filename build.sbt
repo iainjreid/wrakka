@@ -1,6 +1,6 @@
 name := "wrakka"
 organization := "com.candied"
-version := "0.0.2"
+version := "0.0.3"
 scalaVersion := "2.12.6"
 
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
